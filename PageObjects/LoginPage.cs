@@ -39,7 +39,7 @@ namespace TechnicalBootcampSelenium.PageObjects
         /// <returns>True if the login wrapper is displayed, False if otherwise</returns>
         public bool LoginWrapperIsDisplayed()
         {
-            bool loginWrapperIsDisplayed = false;
+            bool loginWrapperIsDisplayed = true;
             try
             {
                 loginWrapperIsDisplayed = loginWrapper.Displayed;

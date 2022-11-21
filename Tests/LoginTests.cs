@@ -40,7 +40,7 @@ namespace TechnicalBootcampSelenium
         public void Any_valid_user_must_be_able_to_login()
         {
             LoginPage loginPage = new LoginPage(driver);
-            loginPage.Login(UserHelper.GenericPassword, UserHelper.GenericPassword);
+            loginPage.Login(UserHelper.PerformanceGlitchUserUsername, UserHelper.GenericPassword);
 
             bool isUserLoggedIn = loginPage.LoginWrapperIsDisplayed();
 

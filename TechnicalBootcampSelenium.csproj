@@ -64,10 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\ApplicationHelper.cs" />
     <Compile Include="Helpers\UserHelper.cs" />
     <Compile Include="Hooks\BaseTest.cs" />
     <Compile Include="PageObjects\LoginPage.cs" />
-    <Compile Include="LoginTests.cs" />
+    <Compile Include="Tests\LoginTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

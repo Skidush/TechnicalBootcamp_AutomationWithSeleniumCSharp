@@ -17,9 +17,9 @@ namespace TechnicalBootcampSelenium.Hooks
         [TestInitialize]
         public void InitializeTest()
         {
-            ChromeDriver driver = new ChromeDriver();
+            driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
             driver.Navigate().GoToUrl(ApplicationHelper.BaseURL);
         }
 
