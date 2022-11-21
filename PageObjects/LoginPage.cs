@@ -46,7 +46,7 @@ namespace TechnicalBootcampSelenium.PageObjects
             }
             catch (NoSuchElementException e)
             {
-                Console.WriteLine($"The login wrapper was not found! {e.Message}");
+                Console.WriteLine($"The login wrapper was not found, this is should be expected for this purpose!");
             }
 
             return loginWrapperIsDisplayed;
