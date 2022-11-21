@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using TechnicalBootcampSelenium.Helpers;
@@ -20,6 +21,13 @@ namespace TechnicalBootcampSelenium.Hooks
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             driver.Navigate().GoToUrl(ApplicationHelper.BaseURL);
+        }
+
+        [TestCleanup]
+        public void DestroyTest()
+        {
+            // Close the current browser / driver session
+            driver.Close();
         }
     }
 }
