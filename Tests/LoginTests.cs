@@ -51,7 +51,7 @@ namespace TechnicalBootcampSelenium
             }
 
             // Will not be executed if the Assertion above fails.
-            Assert.AreEqual("https://www.saucedemo.com/inventory.html", driver.Url, "The user was not logged in!");
+            Assert.AreEqual(ApplicationHelper.InventoryURL, driver.Url, "The user was not logged in!");
         }
     }
 }

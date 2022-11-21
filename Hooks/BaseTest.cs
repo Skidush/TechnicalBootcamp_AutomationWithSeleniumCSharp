@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Chrome;
 using System;
+using TechnicalBootcampSelenium.Helpers;
 
 namespace TechnicalBootcampSelenium.Hooks
 {
@@ -18,7 +19,7 @@ namespace TechnicalBootcampSelenium.Hooks
             ChromeDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-            driver.Navigate().GoToUrl("https://www.saucedemo.com/");
+            driver.Navigate().GoToUrl(ApplicationHelper.BaseURL);
         }
     }
 }
