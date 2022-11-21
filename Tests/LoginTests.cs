@@ -24,7 +24,7 @@ namespace TechnicalBootcampSelenium
             LoginPage loginPage = new LoginPage(driver);
             loginPage.Login(UserHelper.StandardUserUsername, UserHelper.GenericPassword);
 
-            Assert.AreEqual("https://www.saucedemo.com/inventory.html", driver.Url, "The user was not logged in!");
+            Assert.AreEqual(ApplicationHelper.InventoryURL, driver.Url, "The user was not logged in!");
         }
 
         /// <summary>
